@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Average:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <title>Github API</title>
+  </head>
+  <body>
+    <div class="desktop-1">
+      <div class="header">
+        <h1 class="github-profiles">Github Profiles</h1>
+      </div>
+      <img
+        class="image-1-icon"
+        loading="lazy"
+        alt=""
+        src="./assets/image-1@2x.png"
+      />
+
+      <section class="content">
+        <img
+          class="image-2-icon"
+          loading="lazy"
+          alt=""
+          src="./assets/image-2@2x.png"
+        />
+
+        <img
+          class="code-rocket-1-icon"
+          loading="lazy"
+          alt=""
+          src="./assets/code-rocket-1@2x.png"
+        />
+
+        <img
+          class="image-3-icon"
+          loading="lazy"
+          alt=""
+          src="./assets/image-3@2x.png"
+        />
+
+        <div class="profile-details">
+          <div class="input-parent">
+            <div class="input">
+              <input
+                type="search"
+                name="search"
+                id="search-field"
+                placeholder="Find Github User"
+                class="find-github-user"
+              />
+            </div>
+            <button id="search-button" class="search-button">Search</button>
+          </div>
+          <div class="user-info-container" id="user-info">
+            <div class="follower-repo">
+              <div class="followers">
+                Name<br />
+                <p id="name-id"></p>
+              </div>
+              <div class="repositories">
+                <p class="repositories1">Email</p>
+                <p id="email-id"></p>
+              </div>
+            </div>
+            <div class="follower-repo">
+              <div class="followers">
+                Company<br />
+                <p id="company-id"></p>
+              </div>
+              <div class="repositories">
+                <p class="repositories1">location</p>
+                <p id="location-id"></p>
+              </div>
+            </div>
+            <div class="follower-repo">
+              <div class="followers">
+                Followers<br />
+                <p id="followers-id"></p>
+              </div>
+              <div class="repositories">
+                <p class="repositories1">Repositories</p>
+                <p id="repos-id"></p>
+              </div>
+            </div>
+          </div>
+          <div class="bio-container" id="bio-container">
+            <label for="bio">Bio</label>
+            <textarea
+              id="bio"
+              name="bio"
+              class="profile-details-child"
+              placeholder="lorem ipsum ..."
+              rows="{8}"
+              cols="{37}"
+            >
+            </textarea>
+          </div>
+          <div class="save-button-wrapper">
+            <button class="save-button" id='save-button'>Save Data</button>
+          </div>
+        </div>
+        <img
+          class="image-4-icon"
+          loading="lazy"
+          alt=""
+          src="./assets/image-4@2x.png"
+        />
+      </section>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
